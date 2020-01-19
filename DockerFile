@@ -1,0 +1,4 @@
+FROM openjdk:11
+ADD build/libs/CarDashboardDiscovery-1.0-SNAPSHOT.jar CarDashboardDiscovery-1.0-SNAPSHOT.jar
+EXPOSE 8761
+ENTRYPOINT ["java", "-jar", "CarDashboardDiscovery-1.0-SNAPSHOT.jar"]
